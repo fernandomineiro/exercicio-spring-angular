@@ -61,3 +61,19 @@ npm start
 - aumentar a cobertura de testes
   - relatório de cobertura do backed: `./gradlew build test jacocoTestReport`
   - relatório de cobertura do frontend: `npm run coverage`
+
+
+
+
+## subindo o banco de dados no shell
+
+-docker pull mysql:8.0.1
+
+-docker run --name exercicio_spring_angular -e MYSQL_ROOT_PASSWORD=root -d mysql:8.0.1
+
+-docker exec -it exercicio_spring_angular bash
+
+-mysql --user=root --password=root
+
+
+
